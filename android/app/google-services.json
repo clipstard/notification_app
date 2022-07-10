@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "168652305998",
+    "project_id": "three-uk-loyalty-5181d",
+    "storage_bucket": "three-uk-loyalty-5181d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168652305998:android:cf7835f96a881dd5c9351f",
+        "android_client_info": {
+          "package_name": "com.hutchison3g.threeplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168652305998-8ilmv2c5tovf6d2pf1hdmfm5m50i2k7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHbEElseHCX0-xWIR4vmDkxySBrnjSjhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168652305998-8ilmv2c5tovf6d2pf1hdmfm5m50i2k7q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "168652305998-6dfslpgmoe5hfosvg9o5mcjarms1na5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hutchison3g.threeplus"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

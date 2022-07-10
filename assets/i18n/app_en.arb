@@ -1,0 +1,245 @@
+{
+  "@@locale": "en",
+  "app_name": "3Plus UK",
+  "now": "now",
+  "day": "Day",
+  "month": "Month",
+
+  "generic_error": "An error occurred.",
+  "required": "Field is required.",
+  "pwd_show": "Show",
+  "pwd_hide": "Hide",
+  "log_in": "Log in",
+  "sign_up": "Sign up",
+  "cancel": "Cancel",
+  "contact_us": "Contact us",
+  "ok": "OK",
+  "settings": "Settings",
+  "or": "or",
+  "subscription_push_notification": "By push notification",
+
+  "get_in_touch": "Get in touch.",
+  "live_chat": "Live Chat",
+  "call_us": "Call us",
+
+  "useful_links": "Useful links",
+  "log_out": "Log out",
+  "our_terms": "Our terms",
+  "privacy_notice": "Privacy notice",
+  "faqs": "FAQs",
+  "unregister_from_three": "Unregister from Three+",
+  "login_if_have_account": "Already have an account? Log in.",
+
+  "unregister_screen_title": "Are you sure you want to leave Three+?",
+  "unregister_screen_content": "You'll lose access to your reward codes, and you'll miss out on new ones.",
+  "unregister_screen_confirm_button": "Delete my Three+ account",
+  "unregister_screen_cancel_button": "Keep my Three+ account",
+
+  "unregister_confirmation_screen_title": "We're sorry to see you go.",
+  "unregister_confirmation_screen_content": "Your Three+ account has been closed.",
+
+  "nav_bar_top_rewards": "Top rewards",
+  "nav_bar_all_rewards": "All Rewards",
+  "nav_bar_my_codes": "My Codes",
+  "nav_bar_settings": "Settings",
+
+  "button_send_text": "Send text",
+  "button_next": "Next",
+  "button_explore": "Explore Three+",
+  "button_save_changes": "Save changes",
+
+  "login_screen_title": "Get logged in.",
+  "login_screen_msisdn": "Phone number",
+  "login_screen_password": "Password",
+  "login_screen_submit": "Log in",
+  "login_screen_remember_me": "Remember me",
+  "login_screen_biometrics_title": "Log in faster.",
+  "login_screen_use_biometrics": "Use biometric login",
+  "login_screen_greeting": "Hi, {firstName}",
+  "@login_screen_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_screen_biometric_reason": "Please complete the biometrics to proceed.",
+  "login_screen_bad_credentials": "Those details aren't quite right. Please try again.",
+  "login_screen_left_attempt" : "{count, plural, zero{You have no attempts left.} one{You have 1 attempt left.} other{You have {count} attempts left.}}",
+  "@login_screen_left_attempt" : {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "login_max_attempts": "Sorry, you've tried to log in with the wrong details too many times. ",
+  "login_screen_sign_up": "create an account",
+
+  "info_block_title": "Sorry, something went wrong",
+  "info_block_default_error_before_faq": "Please try again or go to our ",
+  "info_block_default_error_after_faq": " for further support.",
+  "info_block_register_error_before_faq": "Unfortunately you're not able to register for Three+. Please see our Three+ ",
+  "info_block_register_error_after_faq": " for details.",
+
+  "intro_screen_enjoy_offers": "Enjoy the best offers!",
+  "intro_screen_welcome_loyalty": "Welcome to Three+, your collection of\n exclusive rewards.",
+
+  "set_pwd_screen_title": "Set a password.",
+  "set_pwd_screen_pwd": "Password",
+  "set_pwd_screen_confirm_pwd": "Confirm password",
+  "set_pwd_screen_pwd_requirements": "Password must meet all requirements",
+  "set_pwd_screen_pwd_format": "Must be at least 12 characters long and can include special characters",
+  "set_pwd_screen_pwd_guessable": "Must be a password that isn't easily guessable (try a string of 3 random words for maximum security)",
+  "set_pwd_screen_pwd_not_match": "Passwords doesn't match.",
+
+  "register_screen_phone_number_placeholder": "Phone number",
+  "register_screen_account_holder_check": "I confirm that I'm the account holder, or that I have their permission to register for Three+.",
+  "register_screen_already_have_account": "Already have an account? Log in.",
+  "register_screen_start": "Let's get started.",
+  "register_screen_invalid_phone_error": "Please enter a valid phone number.",
+  "register_screen_phone_number_title": "Enter your phone number.",
+  "register_screen_error": "Sorry, something’s gone wrong.",
+  "register_screen_condition": "You must be a Three Pay Monthly or Pay As You Go customer to register.",
+
+  "reset_password_title": "Let's reset your password.",
+  "reset_password_pwd_screen_title": "Set a new password.",
+
+  "change_password_pwd_screen_title": "Change your password",
+  "change_password_pwd_screen_input_psw": "New password",
+  "change_password_pwd_screen_input_confirm_psw": "Confirm new password",
+
+  "blocked_customer_title": "You're currently unable to access Three+.",
+  "blocked_customer_hint": "Please contact us to discuss regaining access.",
+
+  "settings_phone_number": "Phone number",
+  "settings_name": "Name",
+  "settings_password": "Change password",
+  "settings_email": "Email",
+  "settings_birthday": "Date of birth",
+  "settings_birthday_format": "Please use the DD/MM format.",
+  "settings_county": "County",
+  "settings_marketing_preferences": "Marketing preferences",
+  "settings_marketing_description": "Hear about the last rewards.",
+
+  "otp_start": "We've sent you a text",
+  "otp_title": "One-time password.",
+  "otp_placeholder": "One-time password",
+  "otp_link": "Didn't recieve the text? Let's try again.",
+  "otp_snackbar_text": "Your one-time password's on its way.",
+  "otp_attempts_exceeded": "You exceeded the limit of attempts to introduce OTP, try again after {date}",
+  "@otp_attempts_exceeded": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "otp_expired": "Sorry, that one-time password has expired.",
+  "otp_wrong": "Sorry, that's the wrong one-time password. Please try again.",
+  "otp_max_attempts": "Sorry, you've tried to log in with the wrong one-time password too many times.",
+
+  "retry_screen_title": "Please try again later.",
+  "retry_screen_delayed_try": "Please try again {time}.",
+  "@retry_screen_delayed_try": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+  "retry_screen_retry_button": "Try again now",
+  "retry_screen_retry_countdown": "in {time} minutes",
+  "@retry_screen_retry_countdown": {
+    "placeholders": {
+      "time": {}
+    }
+  },
+
+  "forgot_your_password": "Forgot your password?",
+  "faq_page": "FAQ page",
+
+  "setup_biometric_screen_title": "Log in faster.",
+  "setup_biometric_screen_description": "Get into Three+ quicker next time using your biometric ID.",
+  "setup_biometric_screen_biometric_id": "Enable {biometricId}",
+  "@setup_biometric_screen_biometric_id": {
+    "placeholders": {
+      "biometricId": {}
+    }
+  },
+  "setup_biometric_screen_fingerprint": "fingerprint login",
+  "setup_biometric_screen_touch_id": "Touch ID",
+  "setup_biometric_screen_face_id": "Face ID",
+  "setup_biometric_screen_button_skip": "No thanks",
+
+  "setup_push_notifs_screen_title": "Never miss a new reward.",
+  "setup_push_notifs_screen_description": "Be the first to hear about new Three+ rewards.",
+  "setup_push_notifs_screen_button_enable": "Enable push notifications",
+  "setup_push_notifs_screen_button_skip": "Maybe later",
+  "setup_push_notifs_screen_button_disable": "Disable push notifications",
+  "setup_push_notifs_screen_no_permissions_title": "Cannot send notifications",
+  "setup_push_notifs_screen_remind_in_days": "You will be asked again about reward notifications in {days} days.",
+  "@setup_push_notifs_screen_remind_in_days": {
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "setup_push_notifs_screen_no_permissions_description": "Please enable push notifications for \"{appName}\" in your settings.",
+  "@setup_push_notifs_screen_no_permissions_description": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+
+  "personal_details_screen_title": "Enter your details.",
+  "personal_details_screen_subtitle": "We need to know a few more things to get you signed up.",
+  "personal_details_screen_marketing_title": "Marketing preferences.",
+  "personal_details_screen_marketing_subtitle": "Hear about the latest rewards.",
+  "personal_details_screen_first_name": "First name",
+  "personal_details_screen_last_name": "Last name",
+  "personal_details_screen_email_address": "Email address",
+  "personal_details_screen_confirm_email_address": "Confirm email address",
+  "personal_details_screen_reward_notification_email": "By email",
+  "personal_details_screen_reward_notification_text": "By text",
+  "personal_details_screen_terms_title": "Terms.",
+  "personal_details_screen_terms_first": "I confirm that I've read and accept the ",
+  "personal_details_screen_terms_second": "terms",
+  "personal_details_screen_terms_third": " and ",
+  "personal_details_screen_terms_fourth": "privacy policy",
+  "personal_details_screen_terms_fifth": ", and that I'm 18 or older.",
+
+  "top_rewards_screen_title": "Top rewards.",
+  "top_rewards_screen_welcome": "Welcome to Three+",
+
+  "all_rewards_screen_title": "All rewards.",
+  "my_codes_screen_title": "Your reward codes.",
+  "settings_screen_title": "Settings",
+
+  "profile_completion_partial": "{percentage}% complete",
+  "@profile_completion_partial": {
+    "placeholders": {
+      "percentage": {}
+    }
+  },
+  "profile_completion_full": "100% complete. You're all set.",
+  "profile_completion_complete_profile": "Complete your profile",
+
+  "additional_info_screen_step_indicator": "Step {curStep} of {totalSteps}",
+  "@additional_info_screen_step_indicator": {
+    "placeholders": {
+      "curStep": {},
+      "totalSteps": {}
+    }
+  },
+
+  "birthday_form_title": "Let us know when to celebrate",
+  "birthday_form_subtitle": "When's your birthday?",
+  "birthday_form_dd": "DD",
+  "birthday_form_mm": "MM",
+  "birthday_form_btn_save": "Save",
+  "birthday_form_skip": "Skip",
+  "birthday_form_validator_invalid": "Invalid",
+  "birthday_form_validator_invalid_date": "The date you have provided is invalid",
+
+  "county_form_title": "Get localised rewards.",
+  "county_form_subtitle": "Where are you based?",
+  "county_form_select_county": "Select your county",
+  "county_form_btn_save": "Save",
+  "county_form_skip": "Skip",
+
+  "reset_email_screen_title": "Change your email address.",
+  "reset_email_screen_email": "New email address",
+  "reset_email_screen_email_confirm": "Confirm new email address"
+}
