@@ -3,7 +3,6 @@ import 'package:notification_app/data/models/persistent_login.dart';
 import 'package:notification_app/localization.dart';
 import 'package:notification_app/presentation/router/route_builder.dart';
 import 'package:notification_app/presentation/screens/empty_screen.dart';
-import 'package:notification_app/presentation/screens/reset_password_msisdn_screen.dart';
 import 'package:notification_app/presentation/widgets/heading.dart';
 import 'package:notification_app/presentation/widgets/link.dart';
 import 'package:notification_app/presentation/wrappers/scrollable_page.dart';
@@ -43,12 +42,6 @@ class _LoginScreenState extends State<LoginScreen> {
     return Link(
       AppLocalizations.of(context)!.forgot_your_password,
       onTap: () {
-        Navigator.of(context).pushReplacement(
-          RouteBuilder<ResetPasswordMsisdnScreen>(
-            active: widget,
-            next: ResetPasswordMsisdnScreen(),
-          ),
-        );
       },
     );
   }

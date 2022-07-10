@@ -1,4 +1,3 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,7 +15,6 @@ import 'package:notification_app/presentation/wrappers/dismiss_keyboard.dart';
 import 'package:notification_app/presentation/wrappers/global_providers_bag.dart';
 import 'package:notification_app/services/local_storage_service.dart';
 import 'package:notification_app/services/navigation_service.dart';
-import 'package:notification_app/services/push_notification_service.dart';
 import 'package:notification_app/utils/route_observer_util.dart';
 
 import 'constants/theme.dart';
@@ -113,7 +111,6 @@ class MyApp extends StatelessWidget {
     await Future.wait(<Future<dynamic>>[
       dotenv.load(fileName: '.env'),
       _initStorage(),
-      _initFirebaseServices(),
     ]);
   }
 
@@ -126,8 +123,4 @@ class MyApp extends StatelessWidget {
     }
   }
 
-  static Future<dynamic> _initFirebaseServices() async {
-    await Firebase.initializeApp();
-    await PushNotificationsService().init();
-  }
 }

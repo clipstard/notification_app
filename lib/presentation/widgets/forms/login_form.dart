@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notification_app/data/exceptions/network_exceptions.dart';
 import 'package:notification_app/data/models/persistent_login.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:notification_app/data/providers/otp_provider.dart';
-import 'package:notification_app/logic/bloc/login/login_bloc.dart';
-import 'package:notification_app/logic/bloc/otp/otp_bloc.dart';
-import 'package:notification_app/logic/form_submission_status.dart';
 import 'package:notification_app/presentation/widgets/labeled_checkbox.dart';
 import 'package:notification_app/presentation/widgets/floating_input.dart';
 import 'package:notification_app/presentation/widgets/outlined_button/outlined_button.dart';
@@ -30,7 +24,6 @@ class LoginForm extends StatefulWidget {
 
 class _LoginFormState extends State<LoginForm> {
   late AppLocalizations _translate;
-  final LocalStorage _localStorage = LocalStorage();
   late bool _rememberMe;
 
   final TextEditingController _msisdnController = TextEditingController();
@@ -67,9 +60,7 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     _translate = AppLocalizations.of(context)!;
 
-    return BlocListener<LoginBloc, LoginState>(
-      listener: _checkForOtpRequested,
-      child: Form(
+    return Form(
         key: _formKey,
         autovalidateMode: AutovalidateMode.disabled,
         child: Column(
@@ -81,7 +72,6 @@ class _LoginFormState extends State<LoginForm> {
             _loginButton(context),
           ],
         ),
-      ),
     );
   }
 
@@ -175,29 +165,4 @@ class _LoginFormState extends State<LoginForm> {
     }
   }
 
-  void _checkForOtpRequested(BuildContext context, LoginState state) {
-    final FormSubmissionStatus status = state.status;
-
-    if (status is SubmissionSuccess) {
-      _localStorage.formLoginsCount = _localStorage.formLoginsCount + 1;
-    }
-
-    if (status is SubmissionFailed &&
-        status.exception is UnauthorizedException &&
-        (status.exception as UnauthorizedException).reason ==
-            UnauthorizedReason.OTP_NEEDED) {
-      _requestOtp(context);
-    }
-  }
-
-  void _requestOtp(BuildContext context) {
-    context.read<OtpBloc>().add(
-          OtpRequestedEvent(
-            widget.data.rememberMe
-                ? widget.data.msisdn
-                : _msisdnController.text,
-            otpType: OtpType.Renew,
-          ),
-        );
-  }
 }
