@@ -52,5 +52,3 @@ app.*.map.json
 test/*.mocks.dart
 test/**/*.mocks.dart
 
-# shared .env
-.env

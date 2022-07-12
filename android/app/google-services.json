@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:168652305998:android:cf7835f96a881dd5c9351f",
         "android_client_info": {
-          "package_name": "com.hutchison3g.threeplus"
+          "package_name": "com.example.application"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "168652305998-6dfslpgmoe5hfosvg9o5mcjarms1na5b.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.hutchison3g.threeplus"
+                "bundle_id": "com.example.application"
               }
             }
           ]

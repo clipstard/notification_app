@@ -6,6 +6,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:notification_app/data/models/persistent_login.dart';
 import 'package:notification_app/my_app_config.dart';
 import 'package:notification_app/presentation/widgets/builders/gradient_builder.dart';
 import 'package:path_provider/path_provider.dart';
@@ -21,6 +22,7 @@ import 'constants/theme.dart';
 import 'presentation/router/app_router.dart';
 
 class MyApp extends StatelessWidget {
+  static PersistentLogin? login;
   final AppRouter _appRouter = AppRouter();
   static final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
       GlobalKey<ScaffoldMessengerState>();

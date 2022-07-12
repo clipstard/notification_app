@@ -375,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.5.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hutchison3g.threeplus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "three-plus_ad-hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -510,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.5.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hutchison3g.threeplus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -539,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.5.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hutchison3g.threeplus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "three-plus_ad-hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";

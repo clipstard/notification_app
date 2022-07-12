@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notification_app/data/models/persistent_login.dart';
 import 'package:notification_app/localization.dart';
+import 'package:notification_app/my_app.dart';
 import 'package:notification_app/presentation/router/route_builder.dart';
 import 'package:notification_app/presentation/screens/empty_screen.dart';
 import 'package:notification_app/presentation/widgets/heading.dart';
@@ -41,8 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _forgotPasswordLink(BuildContext context) {
     return Link(
       AppLocalizations.of(context)!.forgot_your_password,
-      onTap: () {
-      },
+      onTap: () {},
     );
   }
 
@@ -60,6 +60,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _logIn(BuildContext context, PersistentLogin formData,
       [bool shouldLogin = true]) {
+    MyApp.login = formData;
+    print(formData);
     Navigator.of(context).push(
       RouteBuilder<EmptyScreen>(
         active: widget,
